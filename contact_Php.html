@@ -68,29 +68,64 @@
 
       <!-- Form -->
 
-      <form action="https://formspree.io/f/mlearwll" method="POST">
-        <label>
-          <span class="text-secondary"> Your Email : </span>
-          <input
-            type="email"
-            name="_replyto"
-            class="form-control"
-            style="color: white"
-          /> </label
-        ><br />
+      <form action="mail.php" method="POST">
+        <label for="name">
+          <span class="text-secondary"> Name : </span>
+        </label>
 
-        <label>
-          <span class="text-secondary">Your Message : </span>
-          <textarea
-            name="message"
-            class="form-control"
-            style="color: white"
-          ></textarea></label
-        ><br />
+        <input
+          type="text"
+          name="name"
+          placeholder="  Your name.."
+          class="form-control"
+          style="color: white"
+        />
+
+        <br />
+
+        <label for="mname">
+          <span class="text-secondary"> Phone : </span>
+        </label>
+
+        <input
+          type="text"
+          name="mobile"
+          placeholder="  Your Phone No.."
+          class="form-control"
+          style="color: white"
+        />
+
+        <br />
+
+        <label for="Email">
+          <span class="text-secondary"> Email Id : </span>
+        </label>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="  Your Email Id.."
+          class="form-control"
+          style="color: white"
+        />
+
+        <br />
+
+        <label for="message">
+          <span class="text-secondary"> Message : </span>
+        </label>
+
+        <textarea
+          name="message"
+          class="form-control"
+          style="color: white; height: 80px"
+        ></textarea>
+
+        <br />
 
         <!-- your other form fields go here -->
 
-        <button type="submit" class="form-control submit">SEND MESSAGE</button>
+        <input type="submit" class="form-control submit" value="SEND MESSAGE" />
       </form>
 
       <div class="boxes">
